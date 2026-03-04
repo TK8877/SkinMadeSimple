@@ -1,69 +1,84 @@
-// Mobile nav toggle
+/* Glow Guide · script.js */
+
+/* ── Mobile nav ─────────────────── */
 function toggleNav() {
-  const menu = document.getElementById('nav-menu');
-  if (menu) menu.classList.toggle('open');
+  const m = document.getElementById('nav-list');
+  if (m) m.classList.toggle('open');
 }
 
-// Routine / ingredient tab switcher
+/* ── Sticky header shadow ─────────── */
+window.addEventListener('scroll', () => {
+  const h = document.getElementById('hdr');
+  if (h) h.classList.toggle('scrolled', window.scrollY > 10);
+}, { passive: true });
+
+/* ── Tab switcher ─────────────────── */
 function showTab(id, btn) {
-  // Hide all panels
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  // Remove active from all tab buttons
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  // Show selected
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
   const panel = document.getElementById('tab-' + id);
   if (panel) panel.classList.add('active');
-  if (btn) btn.classList.add('active');
+  if (btn)   { btn.classList.add('active'); btn.setAttribute('aria-selected', 'true'); }
 }
 
-// Form submission handler
-function submitForm(e) {
-  if (e) e.preventDefault();
-  const email = document.getElementById('email');
-  const fname = document.getElementById('fname');
+/* ── Form handler ─────────────────── */
+function handleForm(e) {
+  e.preventDefault();
+  const fname    = document.getElementById('fname');
+  const email    = document.getElementById('email');
+  const skintype = document.getElementById('skintype');
+  let ok = true;
 
-  // Simple validation
-  if (fname && !fname.value.trim()) {
-    fname.style.borderColor = '#e74c3c';
-    fname.focus();
-    return;
+  [fname, email, skintype].forEach(el => { if (el) el.style.borderColor = ''; });
+
+  if (!fname || !fname.value.trim()) {
+    if (fname) fname.style.borderColor = '#b02020';
+    ok = false;
   }
-  if (email && (!email.value.trim() || !email.value.includes('@'))) {
-    email.style.borderColor = '#e74c3c';
-    email.focus();
-    return;
+  if (!email || !email.value.includes('@')) {
+    if (email) email.style.borderColor = '#b02020';
+    ok = false;
   }
-  // Show success message
-  const success = document.getElementById('form-success');
-  if (success) {
-    success.style.display = 'block';
-    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    // Clear inputs
-    document.querySelectorAll('.form-card input, .form-card select, .form-card textarea')
+  if (!skintype || !skintype.value) {
+    if (skintype) skintype.style.borderColor = '#b02020';
+    ok = false;
+  }
+  if (!ok) return;
+
+  const box = document.getElementById('form-ok');
+  if (box) {
+    box.style.display = 'block';
+    box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.querySelectorAll('.form-shell input, .form-shell select, .form-shell textarea')
       .forEach(el => el.value = '');
   }
 }
 
-// Subtle scroll-in animations
-(function () {
-  const observer = new IntersectionObserver((entries) => {
+/* ── Scroll-reveal animations ─────── */
+document.addEventListener('DOMContentLoaded', () => {
+  if (!('IntersectionObserver' in window)) return;
+
+  const els = document.querySelectorAll(
+    '.card, .ing-card, .nc, .step-item, .vid-shell, .vid-aside, tbody tr'
+  );
+
+  const obs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
+        entry.target.style.opacity   = '1';
         entry.target.style.transform = 'translateY(0)';
+        obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.07 });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const els = document.querySelectorAll(
-      '.card, .ing-card, .page-card, .step-item, .video-box'
-    );
-    els.forEach((el, i) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(22px)';
-      el.style.transition = `opacity 0.45s ease ${i * 0.055}s, transform 0.45s ease ${i * 0.055}s`;
-      observer.observe(el);
-    });
+  els.forEach((el, i) => {
+    el.style.opacity    = '0';
+    el.style.transform  = 'translateY(20px)';
+    el.style.transition = `opacity .45s ease ${i * .04}s, transform .45s ease ${i * .04}s`;
+    obs.observe(el);
   });
-})();
+});
