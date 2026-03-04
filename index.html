@@ -3,219 +3,255 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Glow Guide — Beginner-friendly skincare routines, ingredient guides, and self-care tips to help you build a healthy, affordable skincare routine." />
-  <meta name="keywords" content="skincare, beginner skincare, skin routine, skincare tips, ingredients, moisturizer, SPF" />
+  <meta name="description" content="Glow Guide — Beginner-friendly skincare routines, ingredient guides, and science-backed tips. Build a healthy skin routine without the overwhelm." />
+  <meta name="keywords" content="skincare, beginner skincare, skin routine, moisturizer, SPF, ingredients, self-care, glow" />
   <meta name="author" content="Glow Guide" />
   <title>Glow Guide — Beginner Skincare Made Simple</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="site-logo">✦ Glow <span>Guide</span></div>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="basics.html">Skincare Basics</a></li>
-          <li><a href="ingredients.html">Ingredients</a></li>
-          <li><a href="routines.html">Routines</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="hdr">
+  <div class="hdr">
+    <a href="index.html" class="logo"><span class="logo-gem"></span>Glow Guide</a>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="basics.html">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html">Routines</a></li>
+        <li><a href="#subscribe" class="nav-pill">Subscribe</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<main>
+
+  <!-- HERO ─────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-wash"></div>
+    <div class="hero-orbs" aria-hidden="true">
+      <div class="orb o1"></div>
+      <div class="orb o2"></div>
+      <div class="orb o3"></div>
     </div>
-  </header>
-
-  <!-- MAIN -->
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Your skin. Your glow.</p>
-        <h1 class="hero-title">Skincare<br /><em>made simple.</em></h1>
-        <p class="hero-sub">Beginner-friendly routines, ingredient guides, and science-backed tips — no overwhelm, no $200 serums required.</p>
-        <a href="basics.html" class="btn-primary">Start Your Journey →</a>
-      </div>
-      <div class="hero-deco" aria-hidden="true">
-        <div class="deco-blob b1"></div>
-        <div class="deco-blob b2"></div>
-        <div class="deco-blob b3"></div>
-      </div>
-    </section>
-
-    <!-- MARQUEE STRIP -->
-    <div class="marquee-strip" aria-hidden="true">
-      <div class="marquee-inner">
-        <span>✦ Cleanse</span><span>✦ Tone</span><span>✦ Moisturize</span><span>✦ Protect</span><span>✦ Glow</span>
-        <span>✦ Cleanse</span><span>✦ Tone</span><span>✦ Moisturize</span><span>✦ Protect</span><span>✦ Glow</span>
+    <div class="wrap">
+      <div class="hero-txt">
+        <p class="eyebrow">Your skin, simplified</p>
+        <h1 class="hero-title">
+          Skincare that
+          <span class="italic-line">actually works.</span>
+        </h1>
+        <p class="hero-sub">Beginner-friendly routines, ingredient guides, and expert-backed tips — built for real people with real budgets.</p>
+        <div class="hero-acts">
+          <a href="basics.html" class="btn btn-fill">Start the Guide →</a>
+          <a href="routines.html" class="btn btn-stroke">Find My Routine</a>
+        </div>
+        <p class="hero-note"><strong>4 pages</strong> of expert skincare knowledge · completely free</p>
       </div>
     </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section class="section">
-      <div class="container two-col">
-        <div>
-          <span class="label">Our Mission</span>
-          <h2>Healthy skin is for everyone — at any budget.</h2>
-          <p>Whether you're picking up your very first cleanser or wondering why your moisturizer isn't working, Glow Guide breaks down everything into clear, honest, science-backed steps.</p>
-          <p>We don't sell products. We don't take sponsorships. We just want to help you understand your skin and build a routine that actually works for <em>you</em>.</p>
-          <p>
-            Have a question? Reach us directly at
-            <!-- EMAIL LINK -->
-            <a href="mailto:hello@glowguide.com" style="color: var(--accent); text-decoration: underline;">hello@glowguide.com</a>
-          </p>
-          <br />
-          <a href="basics.html" class="btn-outline">Learn the Basics →</a>
-        </div>
-        <div>
-          <!-- Image from Unsplash (royalty-free) -->
-          <img
-            src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format&fit=crop&q=80"
-            alt="Skincare products arranged neatly on a white surface"
-            width="600" height="360"
-          />
-        </div>
+  <!-- TICKER ───────────────────────────────────── -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-rail">
+      <span class="ticker-item">Cleanse</span><span class="ticker-item">Tone</span>
+      <span class="ticker-item">Moisturize</span><span class="ticker-item">Protect</span>
+      <span class="ticker-item">Glow</span><span class="ticker-item">Cleanse</span>
+      <span class="ticker-item">Tone</span><span class="ticker-item">Moisturize</span>
+      <span class="ticker-item">Protect</span><span class="ticker-item">Glow</span>
+    </div>
+  </div>
+
+  <!-- MISSION ──────────────────────────────────── -->
+  <section class="sec">
+    <div class="wrap two-col">
+      <div>
+        <span class="chip">✦ Our Mission</span>
+        <h2>Healthy skin is for everyone.</h2>
+        <hr class="rule" />
+        <p>Glow Guide was built for anyone who's ever felt lost in the skincare aisle — overwhelmed by ingredient lists, contradictory advice, and products promising miracles they don't deliver.</p>
+        <p>We break everything down into clear, honest, science-backed steps. No sponsored content. No upsells. Just practical knowledge to help your skin thrive.</p>
+        <p>Questions? Reach us at
+          <!-- EMAIL LINK (required) -->
+          <a href="mailto:hello@glowguide.com" style="color:var(--terra);text-decoration:underline;font-weight:600;">hello@glowguide.com</a>
+        </p>
+        <br />
+        <a href="basics.html" class="btn btn-stroke">Learn the Basics →</a>
       </div>
-    </section>
-
-    <!-- PAGE NAVIGATION CARDS -->
-    <section class="section-alt">
-      <div class="container">
-        <div class="center">
-          <span class="label">Explore the Guide</span>
-          <h2>Everything you need, all in one place.</h2>
-          <p style="max-width:500px; margin:0 auto 0;">Navigate to any section to start building smarter skincare habits today.</p>
-        </div>
-        <div class="page-cards">
-          <a href="basics.html" class="page-card">
-            <span class="pc-num">01</span>
-            <h3>Skincare Basics</h3>
-            <p>Learn the four essential steps, how to layer products, and the biggest beginner mistakes to avoid.</p>
-            <span class="pc-arrow">→</span>
-          </a>
-          <a href="ingredients.html" class="page-card">
-            <span class="pc-num">02</span>
-            <h3>Ingredients Guide</h3>
-            <p>Decode what's actually in your products — hyaluronic acid, retinol, niacinamide, and more.</p>
-            <span class="pc-arrow">→</span>
-          </a>
-          <a href="routines.html" class="page-card">
-            <span class="pc-num">03</span>
-            <h3>Routines</h3>
-            <p>Personalized AM and PM routines for oily, dry, combination, and sensitive skin types.</p>
-            <span class="pc-arrow">→</span>
-          </a>
-        </div>
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=700&auto=format&fit=crop&q=80"
+          alt="A neatly arranged collection of skincare bottles and jars on a marble surface"
+          width="700" height="400"
+          loading="lazy"
+        />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXTERNAL LINK SECTION -->
-    <section class="section">
-      <div class="container two-col">
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&auto=format&fit=crop&q=80"
-            alt="Dermatologist reviewing skincare information on a tablet"
-            width="600" height="360"
-          />
-        </div>
-        <div>
-          <span class="label">Trusted Sources</span>
-          <h2>Backed by dermatologists &amp; science.</h2>
-          <p>All information on Glow Guide is grounded in dermatologist-approved guidance. We regularly reference the <strong>American Academy of Dermatology (AAD)</strong> — one of the most authoritative sources on skin health in the United States.</p>
-          <p>When in doubt, always consult a board-certified dermatologist for personalized advice specific to your skin concerns.</p>
-          <br />
-          <!-- EXTERNAL LINK -->
-          <a href="https://www.aad.org/public/everyday-care/skin-care-basics" target="_blank" rel="noopener" class="btn-outline">Visit AAD.org for Expert Advice ↗</a>
-        </div>
+  <!-- PAGE CARDS ────────────────────────────────── -->
+  <section class="sec-w">
+    <div class="wrap">
+      <div class="center">
+        <span class="chip">✦ Explore</span>
+        <h2>Everything in one place.</h2>
+        <p style="max-width:480px;margin:0 auto;">From foundational steps to personalised routines — here's what you'll find inside Glow Guide.</p>
       </div>
-    </section>
+      <div class="nc-grid">
+        <a href="basics.html" class="nc">
+          <span class="nc-n">01</span>
+          <h3>Skincare Basics</h3>
+          <p>The four essential steps, correct layering order, and the most common beginner mistakes to avoid.</p>
+        </a>
+        <a href="ingredients.html" class="nc">
+          <span class="nc-n">02</span>
+          <h3>Ingredients Guide</h3>
+          <p>Hyaluronic acid, retinol, niacinamide, Vitamin C — decoded in plain language with usage tips.</p>
+        </a>
+        <a href="routines.html" class="nc">
+          <span class="nc-n">03</span>
+          <h3>Daily Routines</h3>
+          <p>Step-by-step AM &amp; PM routines tailored to oily, dry, combination, and sensitive skin types.</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- SUBSCRIPTION & FEEDBACK FORM -->
-    <section class="form-section" id="subscribe">
-      <div class="container">
-        <div class="center" style="margin-bottom: 40px;">
-          <span class="label">Stay in the Glow</span>
-          <h2>Subscribe &amp; Share Your Thoughts</h2>
-          <p>Sign up for weekly, personalized skincare tips delivered to your inbox. We also welcome questions and feedback — we read every message.</p>
-        </div>
+  <!-- TRUSTED SOURCE ─────────────────────────────── -->
+  <section class="sec">
+    <div class="wrap two-col">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=700&auto=format&fit=crop&q=80"
+          alt="A dermatologist reviewing skincare information at a desk"
+          width="700" height="400"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <span class="chip">✦ Science-Backed</span>
+        <h2>Grounded in dermatology.</h2>
+        <hr class="rule" />
+        <p>Every piece of guidance on Glow Guide is rooted in evidence-based dermatology. We regularly reference the <strong>American Academy of Dermatology (AAD)</strong> — the most authoritative voice on skin health in the United States.</p>
+        <p>Our content is educational and meant to help you make informed decisions. Always consult a board-certified dermatologist for advice specific to your skin concerns.</p>
+        <br />
+        <!-- EXTERNAL LINK (required) -->
+        <a href="https://www.aad.org/public/everyday-care/skin-care-basics"
+           target="_blank" rel="noopener noreferrer" class="btn btn-stroke">
+          Visit AAD.org ↗
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <div class="form-card">
-          <h2>Get in Touch</h2>
-          <p>Fill out the form below to subscribe to our newsletter or send us your skincare questions.</p>
+  <!-- SUBSCRIBE FORM ──────────────────────────────── -->
+  <section class="sec-w" id="subscribe">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px;">
+        <span class="chip">✦ Stay in the Glow</span>
+        <h2>Subscribe &amp; ask us anything.</h2>
+        <p style="max-width:500px;margin:0 auto;">Get weekly skincare tips matched to your skin type, or send us your questions — we read every message.</p>
+      </div>
 
-          <!-- FORM — action="#" as server-side processing is not required -->
-          <form action="#" method="post" onsubmit="submitForm(event)">
+      <!-- FORM (action="#" — server-side processing not required) -->
+      <div class="form-shell">
+        <h2>Get in Touch</h2>
+        <p>Complete the form below to subscribe to our newsletter or reach out with a skincare question.</p>
 
-            <!-- Field 1 & 2: Name (two columns) -->
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">First Name <span style="color:var(--accent)">*</span></label>
-                <input type="text" id="fname" name="fname" placeholder="e.g. Mia" required />
-              </div>
-              <div class="form-group">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="e.g. Johnson" />
-              </div>
+        <form action="#" method="post" onsubmit="handleForm(event)" novalidate>
+
+          <!-- Field 1 & 2: Name -->
+          <div class="fr">
+            <div class="fg">
+              <label for="fname">First Name <span class="req">*</span></label>
+              <input type="text" id="fname" name="fname" placeholder="e.g. Maya" required />
             </div>
-
-            <!-- Field 3: Email -->
-            <div class="form-group">
-              <label for="email">Email Address <span style="color:var(--accent)">*</span></label>
-              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            <div class="fg">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="e.g. Chen" />
             </div>
-
-            <!-- Field 4: Skin Type -->
-            <div class="form-group">
-              <label for="skintype">Your Skin Type <span style="color:var(--accent)">*</span></label>
-              <select id="skintype" name="skintype" required>
-                <option value="">— Select your skin type —</option>
-                <option value="oily">Oily</option>
-                <option value="dry">Dry</option>
-                <option value="combination">Combination</option>
-                <option value="sensitive">Sensitive</option>
-                <option value="normal">Normal</option>
-                <option value="unsure">Not sure yet</option>
-              </select>
-            </div>
-
-            <!-- Field 5: Comments/Questions -->
-            <div class="form-group">
-              <label for="comments">Comments or Questions</label>
-              <textarea id="comments" name="comments" rows="4" placeholder="Ask anything — skincare questions, product advice, or just say hi!"></textarea>
-            </div>
-
-            <button type="submit" class="form-submit">Subscribe &amp; Send ✦</button>
-          </form>
-
-          <div class="form-success" id="form-success">
-            🌸 Thank you! You're subscribed. We'll send personalized skincare tips your way soon.
           </div>
+
+          <!-- Field 3: Email -->
+          <div class="fg">
+            <label for="email">Email Address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required />
+          </div>
+
+          <!-- Field 4: Skin Type -->
+          <div class="fg">
+            <label for="skintype">Your Skin Type <span class="req">*</span></label>
+            <select id="skintype" name="skintype" required>
+              <option value="">— Select your skin type —</option>
+              <option value="oily">Oily</option>
+              <option value="dry">Dry</option>
+              <option value="combination">Combination</option>
+              <option value="sensitive">Sensitive</option>
+              <option value="normal">Normal</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+
+          <!-- Field 5: Message -->
+          <div class="fg">
+            <label for="msg">Comments or Questions</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="Ask anything — routine questions, ingredient concerns, or just say hi!"></textarea>
+          </div>
+
+          <button type="submit" class="form-btn">Subscribe &amp; Send ✦</button>
+        </form>
+
+        <div class="form-ok" id="form-ok" aria-live="polite">
+          🌿 Thank you! You're subscribed. We'll be in touch with personalised skincare tips soon.
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-logo">✦ Glow Guide</div>
-      <p>Beginner skincare made simple &amp; accessible for everyone.</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="basics.html">Skincare Basics</a>
-        <a href="ingredients.html">Ingredients</a>
-        <a href="routines.html">Routines</a>
-      </nav>
-      <p class="footer-email">Questions? Email us: <a href="mailto:hello@glowguide.com">hello@glowguide.com</a></p>
-      <p class="footer-copy">© 2025 Glow Guide — For educational purposes only. Always consult a dermatologist for personalized advice.</p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <div class="logo"><span class="logo-gem"></span>Glow Guide</div>
+      <p>Beginner skincare made simple, affordable, and accessible for everyone.</p>
+    </div>
+    <div class="ftr-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html">Routines</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.aad.org" target="_blank" rel="noopener">AAD.org ↗</a></li>
+        <li><a href="https://www.healthline.com/health/beauty-skin-care" target="_blank" rel="noopener">Healthline ↗</a></li>
+        <li><a href="https://incidecoder.com" target="_blank" rel="noopener">INCI Decoder ↗</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col ftr-email">
+      <h4>Contact</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.38);margin-bottom:10px;">Have a question or feedback?</p>
+      <a href="mailto:hello@glowguide.com">hello@glowguide.com</a>
+    </div>
+  </div>
+  <div class="ftr-bottom">
+    <span>© 2025 Glow Guide — For educational purposes only.</span>
+    <span>Always consult a dermatologist for personalised advice.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
