@@ -3,236 +3,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn the fundamental steps of skincare — cleansing, moisturizing, and SPF — with a beginner-friendly guide from Glow Guide." />
-  <meta name="keywords" content="skincare basics, cleanse, moisturize, SPF, sunscreen, beginner skincare routine, how to layer skincare" />
+  <meta name="description" content="Learn the four essential skincare steps — cleansing, moisturizing, and SPF. Includes a full product comparison table and beginner layering guide." />
+  <meta name="keywords" content="skincare basics, cleanse, moisturize, SPF, sunscreen, layering skincare, beginner skin routine, skin care steps" />
   <meta name="author" content="Glow Guide" />
   <title>Skincare Basics — Glow Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="site-logo">✦ Glow <span>Guide</span></div>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="basics.html" class="active">Skincare Basics</a></li>
-          <li><a href="ingredients.html">Ingredients</a></li>
-          <li><a href="routines.html">Routines</a></li>
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="hdr">
+  <div class="hdr">
+    <a href="index.html" class="logo"><span class="logo-gem"></span>Glow Guide</a>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html" class="active">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html">Routines</a></li>
+        <li><a href="index.html#subscribe" class="nav-pill">Subscribe</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<main>
+
+  <!-- PAGE HERO -->
+  <div class="pg-hero">
+    <span class="chip">✦ Start Here</span>
+    <h1>Skincare <em>Basics</em></h1>
+    <p>You need three things to start: a cleanser, a moisturiser, and SPF. Everything else is optional. Here's exactly why — and how to use them.</p>
+  </div>
+
+  <!-- THE FOUR PILLARS ──────────────────────────── -->
+  <section class="sec">
+    <div class="wrap">
+      <span class="chip">✦ The Essentials</span>
+      <h2>Four steps. That's it.</h2>
+      <p style="max-width:620px;">No matter your skin type, age, or budget, every effective skincare routine is built on the same four foundational pillars. Master these consistently before adding anything else.</p>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-ico">🧼</span>
+          <h3>1. Cleanse</h3>
+          <p>Removes dirt, oil, sunscreen, and pollution. Use a gentle, pH-balanced formula morning and evening. Avoid anything that makes skin feel "squeaky clean" — that signals over-stripping of natural oils.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">🌸</span>
+          <h3>2. Tone <em style="font-size:13px;">(Optional)</em></h3>
+          <p>Restores pH balance after cleansing and primes skin to absorb serums and moisturisers more effectively. Hydrating toners are especially beneficial for dry or dull skin types.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">💧</span>
+          <h3>3. Moisturise</h3>
+          <p>Every skin type needs hydration — including oily skin. A moisturiser seals in water, reinforces the skin barrier, and prevents oil overproduction caused by dehydration.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">☀️</span>
+          <h3>4. Protect (SPF)</h3>
+          <p>The most effective anti-ageing product you can use. Apply SPF 30+ every morning — on cloudy days, indoors, year-round. UV damage is cumulative and permanent. This step is non-negotiable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYERING + IMAGE ─────────────────────────── -->
+  <section class="sec-w">
+    <div class="wrap two-col">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=700&auto=format&fit=crop&q=80"
+          alt="Skincare products arranged in step order on a wooden surface with soft lighting"
+          width="700" height="400"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <span class="chip">✦ Layering Order</span>
+        <h2>Always thinnest to thickest.</h2>
+        <hr class="rule" />
+        <p>The cardinal rule of skincare layering: apply products from the most watery consistency to the heaviest. This lets each product absorb properly instead of being blocked by a thicker layer above it.</p>
+        <ul>
+          <li><strong>1st — Cleanser:</strong> Always the very first step.</li>
+          <li><strong>2nd — Toner / Essence:</strong> Lightest, almost water-like texture.</li>
+          <li><strong>3rd — Serum:</strong> Concentrated actives in a thin, fast-absorbing base.</li>
+          <li><strong>4th — Moisturiser:</strong> Locks in everything applied before it.</li>
+          <li><strong>5th — SPF (AM only):</strong> Final step every single morning — never under anything.</li>
         </ul>
-      </nav>
-      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <main>
-
-    <!-- PAGE HERO -->
-    <div class="page-hero">
-      <span class="label">Start Here</span>
-      <h1>Skincare <em>Basics</em></h1>
-      <p>You don't need 12 products. You need the right 3–4 — done consistently. Here's exactly what they are and why they matter.</p>
-    </div>
-
-    <!-- THE CORE FOUR -->
-    <section class="section">
-      <div class="container">
-        <span class="label">The Core Four</span>
-        <h2>The essential steps every routine needs.</h2>
-        <p style="max-width:640px;">No matter your skin type, budget, or experience level, every effective skincare routine is built on the same four pillars. Master these before adding anything else.</p>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-icon">🧼</div>
-            <h3>1. Cleanse</h3>
-            <p>Remove dirt, oil, sunscreen, and environmental pollutants. Use a gentle cleanser twice daily — morning and night. Avoid anything that leaves skin feeling "squeaky clean," which signals over-stripping.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">🌸</div>
-            <h3>2. Tone <em style="font-size:14px;">(optional)</em></h3>
-            <p>Toners balance your skin's pH after cleansing and can remove residual cleanser. A good toner prepares your skin to absorb serums and moisturizers more effectively.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">💧</div>
-            <h3>3. Moisturize</h3>
-            <p>Every skin type needs hydration — including oily skin. A moisturizer locks in water and reinforces the skin barrier. Without it, skin overproduces oil or becomes irritated and flaky.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">☀️</div>
-            <h3>4. SPF (AM only)</h3>
-            <p>The single most effective anti-aging product you can use. Apply SPF 30 or higher every single morning — even indoors, even on cloudy days. UV damage is cumulative and irreversible.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LAYERING ORDER -->
-    <section class="section-alt">
-      <div class="container two-col">
-        <div>
-          <span class="label">Product Layering</span>
-          <h2>Always go thinnest to thickest.</h2>
-          <p>The golden rule of skincare layering is to apply products from the lightest (most watery) consistency to the heaviest (thickest). This ensures each product can penetrate the skin properly and isn't blocked by a heavier product above it.</p>
-          <p>For example: a water-based serum applied over a thick moisturizer can't absorb — the moisturizer creates a barrier. But when applied the correct way (serum first, moisturizer second), both work as intended.</p>
-          <br />
-          <a href="routines.html" class="btn-outline">See Full Routines →</a>
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?w=600&auto=format&fit=crop&q=80"
-            alt="Skincare products arranged in layering order on a wooden surface"
-            width="600" height="360"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPARISON TABLE -->
-    <section class="section">
-      <div class="container">
-        <span class="label">Quick Comparison</span>
-        <h2>Skincare product types at a glance.</h2>
-        <p style="max-width:680px;">Not sure what each type of product does or when to use it? The table below summarizes the most common product categories, their purpose, when to apply them, and which skin types typically benefit most.</p>
-
-        <div class="table-wrapper">
-          <table>
-            <caption>Common Skincare Products — Purpose, Timing &amp; Skin Type Suitability</caption>
-            <thead>
-              <tr>
-                <th>Product Type</th>
-                <th>What It Does</th>
-                <th>When to Apply</th>
-                <th>Best For</th>
-                <th>Beginner Priority</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Cleanser</td>
-                <td>Removes dirt, oil, makeup, and sunscreen from the skin surface</td>
-                <td>Morning &amp; Evening</td>
-                <td><span class="tag">All Skin Types</span></td>
-                <td>⭐⭐⭐ Essential</td>
-              </tr>
-              <tr>
-                <td>Toner</td>
-                <td>Balances pH, removes leftover residue, preps skin for next steps</td>
-                <td>After Cleansing</td>
-                <td><span class="tag neutral">Oily / Combo</span></td>
-                <td>⭐⭐ Optional</td>
-              </tr>
-              <tr>
-                <td>Serum</td>
-                <td>Delivers concentrated active ingredients (e.g., Vitamin C, HA, Retinol)</td>
-                <td>After Toner, Before Moisturizer</td>
-                <td><span class="tag neutral">Targeted Concerns</span></td>
-                <td>⭐⭐ Add Later</td>
-              </tr>
-              <tr>
-                <td>Moisturizer</td>
-                <td>Seals in hydration, strengthens the skin barrier, prevents water loss</td>
-                <td>After Serum (AM &amp; PM)</td>
-                <td><span class="tag">All Skin Types</span></td>
-                <td>⭐⭐⭐ Essential</td>
-              </tr>
-              <tr>
-                <td>Eye Cream</td>
-                <td>Hydrates and targets the delicate under-eye area (puffiness, dark circles)</td>
-                <td>After Moisturizer</td>
-                <td><span class="tag neutral">Mature / Dry</span></td>
-                <td>⭐ Optional</td>
-              </tr>
-              <tr>
-                <td>Sunscreen (SPF)</td>
-                <td>Protects against UVA/UVB rays, prevents premature aging and skin cancer</td>
-                <td>Last Step — AM Only</td>
-                <td><span class="tag">All Skin Types</span></td>
-                <td>⭐⭐⭐ Essential</td>
-              </tr>
-              <tr>
-                <td>Exfoliant (AHA/BHA)</td>
-                <td>Removes dead skin cells, improves texture, unclogs pores</td>
-                <td>Evening, 1–3× per week</td>
-                <td><span class="tag caution">Introduce Slowly</span></td>
-                <td>⭐ Add After Basics</td>
-              </tr>
-              <tr>
-                <td>Face Oil</td>
-                <td>Nourishes and seals in moisture; not a replacement for moisturizer</td>
-                <td>Last PM Step</td>
-                <td><span class="tag neutral">Dry / Mature</span></td>
-                <td>⭐ Optional</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMMON MISTAKES -->
-    <section class="section-alt">
-      <div class="container">
-        <div class="center">
-          <span class="label">Avoid These</span>
-          <h2>The most common beginner mistakes.</h2>
-          <p style="max-width:560px; margin: 0 auto 44px;">Most skincare frustrations come from a handful of easily avoidable habits. Here's what to watch out for from day one.</p>
-        </div>
-        <div class="card-grid">
-          <div class="card">
-            <div class="card-icon">⚠️</div>
-            <h3>Over-cleansing</h3>
-            <p>Washing more than twice a day strips the skin's natural protective oils, leading to irritation, redness, and paradoxically — more oil production as the skin tries to compensate.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">🧪</div>
-            <h3>Too Many Products at Once</h3>
-            <p>Adding several new products simultaneously makes it impossible to identify what's working (or causing a reaction). Introduce one product at a time and wait 1–2 weeks before adding another.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">😴</div>
-            <h3>Skipping SPF</h3>
-            <p>UV damage causes wrinkles, dark spots, and increases skin cancer risk. Sunscreen is the most proven anti-aging product in existence. No routine is complete without it in the morning.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">⏱️</div>
-            <h3>Expecting Instant Results</h3>
-            <p>Most skincare products need 4–12 weeks of consistent use before visible improvements appear. Switching products too soon is one of the biggest reasons routines fail.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <div class="cta-banner">
-      <div class="container">
-        <span class="label">Ready for more?</span>
-        <h2>Learn what's in your products.</h2>
-        <p>Now that you understand the basics, explore our Ingredients Guide to decode what your products actually contain.</p>
-        <a href="ingredients.html" class="btn-primary">Explore Ingredients →</a>
+        <br />
+        <a href="routines.html" class="btn btn-stroke">View Full Routines →</a>
       </div>
     </div>
+  </section>
 
-  </main>
+  <!-- ════════════════════════════════════════
+       TABLE  ·  Required element
+       3+ columns · 1 header row · 3+ data rows
+  ════════════════════════════════════════ -->
+  <section class="sec">
+    <div class="wrap">
+      <span class="chip">✦ Product Guide</span>
+      <h2>Skincare products at a glance.</h2>
+      <p style="max-width:680px;">Not sure what each product type does or when to use it? The table below summarises the most common skincare product categories — their purpose, timing, which skin types benefit most, and how critical each one is for beginners just getting started.</p>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-logo">✦ Glow Guide</div>
-      <p>Beginner skincare made simple &amp; accessible for everyone.</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="basics.html">Skincare Basics</a>
-        <a href="ingredients.html">Ingredients</a>
-        <a href="routines.html">Routines</a>
-      </nav>
-      <p class="footer-email">Questions? Email us: <a href="mailto:hello@glowguide.com">hello@glowguide.com</a></p>
-      <p class="footer-copy">© 2025 Glow Guide — For educational purposes only.</p>
+      <div class="tbl-wrap">
+        <table>
+          <caption>Common Skincare Products — Purpose, Timing, Skin Type Suitability &amp; Beginner Priority</caption>
+          <thead>
+            <tr>
+              <th>Product Type</th>
+              <th>What It Does</th>
+              <th>When to Apply</th>
+              <th>Best For</th>
+              <th>Priority Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cleanser</td>
+              <td>Removes dirt, oil, makeup, and environmental residue from the skin surface</td>
+              <td>Morning &amp; Night</td>
+              <td><span class="badge badge-g">All Skin Types</span></td>
+              <td>⭐⭐⭐ Essential</td>
+            </tr>
+            <tr>
+              <td>Toner</td>
+              <td>Restores pH balance, removes residual cleanser, preps skin for actives</td>
+              <td>After Cleansing</td>
+              <td><span class="badge badge-t">Oily / Combo</span></td>
+              <td>⭐⭐ Optional</td>
+            </tr>
+            <tr>
+              <td>Serum</td>
+              <td>Delivers concentrated active ingredients for targeted skin concerns</td>
+              <td>Before Moisturiser</td>
+              <td><span class="badge badge-t">Specific Concerns</span></td>
+              <td>⭐⭐ Add Gradually</td>
+            </tr>
+            <tr>
+              <td>Moisturiser</td>
+              <td>Hydrates skin and seals the barrier to prevent transepidermal water loss</td>
+              <td>AM &amp; PM</td>
+              <td><span class="badge badge-g">All Skin Types</span></td>
+              <td>⭐⭐⭐ Essential</td>
+            </tr>
+            <tr>
+              <td>Eye Cream</td>
+              <td>Targets puffiness, dark circles, and fine lines around the delicate eye area</td>
+              <td>After Moisturiser</td>
+              <td><span class="badge badge-t">Mature / Dry</span></td>
+              <td>⭐ Optional</td>
+            </tr>
+            <tr>
+              <td>Exfoliant (AHA/BHA)</td>
+              <td>Removes dead skin cells chemically; improves texture and clears pores</td>
+              <td>Evening · 1–3× /week</td>
+              <td><span class="badge badge-r">Introduce Slowly</span></td>
+              <td>⭐ After Basics Only</td>
+            </tr>
+            <tr>
+              <td>Sunscreen (SPF)</td>
+              <td>Shields skin from UVA / UVB radiation — prevents ageing and skin cancer</td>
+              <td>Last Step · AM Only</td>
+              <td><span class="badge badge-g">All Skin Types</span></td>
+              <td>⭐⭐⭐ Essential</td>
+            </tr>
+            <tr>
+              <td>Face Oil</td>
+              <td>Nourishes and seals the outer skin layer; not a replacement for moisturiser</td>
+              <td>Last PM Step</td>
+              <td><span class="badge badge-t">Dry / Mature</span></td>
+              <td>⭐ Optional</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- MISTAKES ─────────────────────────────────── -->
+  <section class="sec-w">
+    <div class="wrap">
+      <div class="center">
+        <span class="chip">✦ Common Pitfalls</span>
+        <h2>Mistakes to avoid from day one.</h2>
+        <p style="max-width:540px;margin:0 auto 50px;">Most skincare frustrations come from a small number of easily avoidable habits. Knowing these upfront saves months of trial and error.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-ico">⚠️</span>
+          <h3>Over-cleansing</h3>
+          <p>Washing more than twice a day strips the skin's natural protective oils, triggering irritation, redness, and ironically — more oil production as your skin tries to compensate. Twice daily is the sweet spot.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">🧪</span>
+          <h3>Too Many Products at Once</h3>
+          <p>Adding several new products simultaneously makes it impossible to identify what's helping — or causing a reaction. Introduce one product at a time and wait at least 1–2 weeks before adding the next.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">🌞</span>
+          <h3>Skipping SPF</h3>
+          <p>UV exposure is responsible for up to 90% of visible skin ageing. No skincare routine is complete — or fully effective — without daily broad-spectrum SPF 30+ as the last morning step. No exceptions.</p>
+        </div>
+        <div class="card">
+          <span class="card-ico">⏱️</span>
+          <h3>Expecting Instant Results</h3>
+          <p>Most active ingredients need 4–12 weeks of consistent use before visible improvements appear. Switching products every two weeks is the main reason people never see progress. Patience is the real secret.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-dk">
+    <div class="wrap">
+      <span class="chip">✦ What's Next?</span>
+      <h2>Decode what's in your products.</h2>
+      <p>Now that you have the fundamentals, learn what each ingredient on the label actually does — and which ones are right for your skin type.</p>
+      <a href="ingredients.html" class="btn btn-ghost">Explore Ingredients →</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <div class="logo"><span class="logo-gem"></span>Glow Guide</div>
+      <p>Beginner skincare made simple, affordable, and accessible for everyone.</p>
+    </div>
+    <div class="ftr-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html">Routines</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.aad.org" target="_blank" rel="noopener">AAD.org ↗</a></li>
+        <li><a href="https://www.healthline.com/health/beauty-skin-care" target="_blank" rel="noopener">Healthline ↗</a></li>
+        <li><a href="https://incidecoder.com" target="_blank" rel="noopener">INCI Decoder ↗</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col ftr-email">
+      <h4>Contact</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.38);margin-bottom:10px;">Questions? We'd love to help.</p>
+      <a href="mailto:hello@glowguide.com">hello@glowguide.com</a>
+    </div>
+  </div>
+  <div class="ftr-bottom">
+    <span>© 2025 Glow Guide — For educational purposes only.</span>
+    <span>Always consult a dermatologist for personalised advice.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
