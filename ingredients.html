@@ -1,140 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Decode skincare ingredients like hyaluronic acid, retinol, niacinamide, and Vitamin C. Learn what they do, who they're for, and what not to mix." />
+  <meta name="keywords" content="skincare ingredients, hyaluronic acid, retinol, niacinamide, vitamin C, ceramides, salicylic acid, beginner guide" />
+  <meta name="author" content="Glow Guide" />
   <title>Ingredients Guide — Glow Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-logo">✦ Glow Guide</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="basics.html">Skincare Basics</a></li>
-    <li><a href="ingredients.html" class="active">Ingredients</a></li>
-    <li><a href="routines.html">Routines</a></li>
-    <li><a href="faq.html">Tips & FAQs</a></li>
-    <li><a href="resources.html">Resources</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="toggleNav()">☰</button>
-</nav>
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="site-logo">✦ Glow <span>Guide</span></div>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basics.html">Skincare Basics</a></li>
+          <li><a href="ingredients.html" class="active">Ingredients</a></li>
+          <li><a href="routines.html">Routines</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
 
-<div class="page-hero">
-  <span class="label">Know What's In Your Products</span>
-  <h1>Ingredients <em>Decoded</em></h1>
-  <p>Learn what key skincare ingredients do, who they're best for, and how to use them safely.</p>
-</div>
+  <!-- MAIN -->
+  <main>
 
-<section class="content-section section">
-  <div class="container">
-    <span class="label">Hydrators & Humectants</span>
-    <h2>Moisture-boosting ingredients.</h2>
-    <div class="ingredient-grid">
-      <div class="ing-card">
-        <span class="ing-tag">All Skin Types</span>
-        <h3>Hyaluronic Acid</h3>
-        <p>A powerful humectant that draws water into the skin and holds up to 1,000x its weight in moisture. Best applied to damp skin followed by a moisturizer to seal it in.</p>
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <span class="label">Know What's In Your Products</span>
+      <h1>Ingredients <em>Decoded</em></h1>
+      <p>From hyaluronic acid to retinol — learn what the most popular skincare ingredients actually do, who they're best for, and how to use them safely.</p>
+    </div>
+
+    <!-- HYDRATORS -->
+    <section class="section">
+      <div class="container">
+        <span class="label">Hydrators &amp; Humectants</span>
+        <h2>Moisture-boosting ingredients.</h2>
+        <p style="max-width:640px;">Humectants are ingredients that draw water into the skin from the environment or deeper skin layers, helping keep the complexion plump and hydrated. These are some of the gentlest and most universally beneficial skincare ingredients available.</p>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <span class="tag">All Skin Types</span>
+            <h3>Hyaluronic Acid</h3>
+            <p>A powerhouse humectant that can hold up to 1,000 times its weight in water. Naturally occurring in the body, it plumps and hydrates the skin. Apply to damp skin and immediately follow with a moisturizer to lock in the hydration — without this step, it can actually draw moisture out of the skin in dry climates.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag">All Skin Types</span>
+            <h3>Glycerin</h3>
+            <p>One of the most effective and widely used humectants in skincare. Found in most moisturizers, toners, and cleansers. Glycerin is very gentle, non-irritating, and works for all skin types including sensitive skin. It pulls moisture from the air into the upper layers of skin, maintaining soft, supple texture throughout the day.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag neutral">Dry / Normal</span>
+            <h3>Squalane</h3>
+            <p>A lightweight, stable oil derived from olives or sugarcane that closely mimics the skin's own natural sebum. It's non-comedogenic (won't clog pores), absorbs quickly, and is excellent for softening and protecting the skin barrier. A great option for those who want the nourishing benefits of an oil without heaviness.</p>
+          </div>
+        </div>
       </div>
-      <div class="ing-card">
-        <span class="ing-tag">Dry / Sensitive</span>
-        <h3>Glycerin</h3>
-        <p>One of the most effective humectants available. Found in most moisturizers, it pulls moisture from the air into your skin and is gentle enough for all skin types including sensitive skin.</p>
+    </section>
+
+    <!-- ACTIVES -->
+    <section class="section-alt">
+      <div class="container">
+        <span class="label">Actives &amp; Treatments</span>
+        <h2>Targeted treatment ingredients.</h2>
+        <p style="max-width:640px;">Active ingredients are the workhorses of skincare — they deliver specific, measurable changes to the skin. However, they require more care when introducing them. Always start slowly, and never mix actives without researching their compatibility first.</p>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <span class="tag caution">Start Slow · PM Only</span>
+            <h3>Retinol (Vitamin A)</h3>
+            <p>Widely considered the gold standard anti-aging ingredient. Retinol speeds up cell turnover, stimulates collagen, reduces the appearance of fine lines, and improves skin texture over time. Begin with the lowest concentration (0.025–0.05%) and use only at night, every other night at first. Expect dryness and possible purging during the first 4–6 weeks as your skin adjusts.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag">Brightening · AM</span>
+            <h3>Vitamin C (Ascorbic Acid)</h3>
+            <p>A potent antioxidant that brightens the complexion, fades hyperpigmentation and dark spots, boosts collagen production, and protects against free radical damage from UV and pollution. Best used in the morning before SPF. Look for formulas containing 10–20% L-ascorbic acid and store in a cool, dark place as Vitamin C oxidizes quickly when exposed to light and air.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag">All Skin Types</span>
+            <h3>Niacinamide (Vitamin B3)</h3>
+            <p>One of the most versatile skincare ingredients available. Niacinamide reduces redness and inflammation, visibly minimizes the appearance of pores, regulates sebum production for oily skin, fades dark spots, and strengthens the skin barrier. It works well with nearly all other ingredients and is gentle enough for daily use on even the most sensitive skin types.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag neutral">Exfoliant · AHA</span>
+            <h3>Glycolic &amp; Lactic Acid</h3>
+            <p>Alpha-hydroxy acids (AHAs) chemically exfoliate the surface of the skin by dissolving the bonds between dead skin cells, revealing smoother, brighter skin below. Glycolic acid is the strongest AHA and works fastest; lactic acid is gentler and better suited for sensitive or dry skin beginners. Use 1–3 times per week at night and always follow with SPF the next morning — AHAs increase sun sensitivity.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag neutral">Exfoliant · BHA · Oily</span>
+            <h3>Salicylic Acid</h3>
+            <p>A beta-hydroxy acid (BHA) that is oil-soluble, allowing it to penetrate deep into pores and dissolve the excess sebum and dead skin cells that cause blackheads, whiteheads, and acne. This makes it uniquely effective for oily and acne-prone skin. Available in concentrations of 0.5–2%. Use 1–2 times per week to avoid over-exfoliation and barrier damage.</p>
+          </div>
+          <div class="ing-card">
+            <span class="tag">Barrier Repair · Dry</span>
+            <h3>Ceramides</h3>
+            <p>Ceramides are lipid molecules that make up approximately 50% of the skin's outer barrier layer. They act like the "mortar" between skin cells, keeping moisture locked in and irritants locked out. Ceramide levels naturally decline with age and can be depleted by over-cleansing or harsh actives. Replenishing them through moisturizers is especially important for dry, eczema-prone, or compromised skin.</p>
+          </div>
+        </div>
       </div>
-      <div class="ing-card">
-        <span class="ing-tag">Normal / Dry</span>
-        <h3>Squalane</h3>
-        <p>A lightweight, non-comedogenic oil that mimics the skin's natural sebum. Excellent at softening skin without clogging pores. Derived from olives or sugarcane.</p>
+    </section>
+
+    <!-- WHAT NOT TO MIX -->
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <span class="label">Ingredient Conflicts</span>
+          <h2>What <em>not</em> to mix.</h2>
+          <p style="max-width:560px; margin: 0 auto 44px;">Some ingredient combinations can irritate the skin, neutralize each other's effectiveness, or even cause damage. Knowing these pairs is just as important as knowing the individual ingredients.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">🚫</div>
+            <h3>Retinol + AHAs/BHAs</h3>
+            <p>Layering retinol with chemical exfoliants causes significant irritation and can compromise the skin barrier. Alternate them on different nights — use exfoliants on Monday/Wednesday/Friday, retinol on others.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚫</div>
+            <h3>Vitamin C + Retinol</h3>
+            <p>Both are potent actives. Together they can cause redness and irritation. The easy fix: use Vitamin C in the morning (with SPF) and Retinol exclusively at night.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚠️</div>
+            <h3>Vitamin C + Niacinamide</h3>
+            <p>These two can reduce each other's effectiveness when used simultaneously. Apply Vitamin C first, let it absorb for 20–30 minutes, then follow with Niacinamide. Or use them at different times of day.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✅</div>
+            <h3>Hyaluronic Acid + Everything</h3>
+            <p>Hyaluronic acid is uniquely compatible with virtually all other ingredients — Vitamin C, retinol, niacinamide, exfoliants, and SPF. It's one of the few ingredients that works harmoniously with any routine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner">
+      <div class="container">
+        <span class="label">Ready to put it together?</span>
+        <h2>Build your personalized routine.</h2>
+        <p>Now that you understand ingredients, see how to combine them into a complete AM and PM routine for your specific skin type.</p>
+        <a href="routines.html" class="btn-primary">View Routines →</a>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="content-section section" style="background: var(--white);">
-  <div class="container">
-    <span class="label">Actives & Treatments</span>
-    <h2>Targeted treatment ingredients.</h2>
-    <div class="ingredient-grid">
-      <div class="ing-card">
-        <span class="ing-tag" style="background:#fdecea;color:#c0392b;">Start Slow · Nighttime Only</span>
-        <h3>Retinol (Vitamin A)</h3>
-        <p>The gold standard anti-aging ingredient. Speeds up cell turnover, reduces fine lines, and improves texture. Start with 0.025–0.1% and use only at night. Can cause dryness and purging initially.</p>
-      </div>
-      <div class="ing-card">
-        <span class="ing-tag">Brightening</span>
-        <h3>Vitamin C (Ascorbic Acid)</h3>
-        <p>A powerful antioxidant that brightens skin, fades dark spots, and boosts collagen. Best used in the morning. Look for formulas with 10–20% L-ascorbic acid and store away from light.</p>
-      </div>
-      <div class="ing-card">
-        <span class="ing-tag">Exfoliant</span>
-        <h3>Niacinamide (Vitamin B3)</h3>
-        <p>A versatile ingredient that reduces redness, minimizes pores, controls oil, and strengthens the skin barrier. Works well with most other ingredients. Ideal for sensitive and oily skin types.</p>
-      </div>
-      <div class="ing-card">
-        <span class="ing-tag">Exfoliant · AHA</span>
-        <h3>Glycolic & Lactic Acid</h3>
-        <p>Alpha-hydroxy acids that chemically exfoliate the top layer of skin, revealing smoother, brighter skin beneath. Lactic acid is gentler and better for beginners. Use 1–3x per week max.</p>
-      </div>
-      <div class="ing-card">
-        <span class="ing-tag">Exfoliant · BHA · Oily Skin</span>
-        <h3>Salicylic Acid</h3>
-        <p>A beta-hydroxy acid that's oil-soluble, meaning it penetrates pores to dissolve congestion and reduce breakouts. Ideal for oily, acne-prone skin. Use 1–2x per week.</p>
-      </div>
-      <div class="ing-card">
-        <span class="ing-tag">Barrier Repair</span>
-        <h3>Ceramides</h3>
-        <p>Naturally occurring lipids that make up about 50% of the skin barrier. Help repair and maintain the protective layer that keeps moisture in and irritants out. Excellent for dry, sensitive skin.</p>
-      </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">✦ Glow Guide</div>
+      <p>Beginner skincare made simple &amp; accessible for everyone.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="basics.html">Skincare Basics</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="routines.html">Routines</a>
+      </nav>
+      <p class="footer-email">Questions? Email us: <a href="mailto:hello@glowguide.com">hello@glowguide.com</a></p>
+      <p class="footer-copy">© 2025 Glow Guide — For educational purposes only.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="content-section section">
-  <div class="container">
-    <span class="label">Ingredient Pairs to Avoid</span>
-    <h2>What <em>not</em> to mix.</h2>
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-icon">🚫</div>
-        <h3>Retinol + AHAs/BHAs</h3>
-        <p>Combining these can cause significant irritation and compromise the skin barrier. Use retinol at night and exfoliating acids on alternate nights.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon">🚫</div>
-        <h3>Vitamin C + Niacinamide</h3>
-        <p>Can reduce the effectiveness of Vitamin C. Apply Vitamin C first and wait 20–30 minutes before applying Niacinamide, or use them at different times of day.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon">🚫</div>
-        <h3>Retinol + Vitamin C</h3>
-        <p>Both can be irritating and their effectiveness can be reduced when used together. Use Vitamin C in the morning and Retinol at night.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-icon">✅</div>
-        <h3>Hyaluronic Acid + Everything</h3>
-        <p>HA works well with all other actives. It's a hydration booster that pairs beautifully with Vitamin C, Niacinamide, retinol, and SPF.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-logo">✦ Glow Guide</div>
-    <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="basics.html">Basics</a></li>
-      <li><a href="ingredients.html">Ingredients</a></li>
-      <li><a href="routines.html">Routines</a></li>
-      <li><a href="faq.html">Tips &amp; FAQs</a></li>
-      <li><a href="resources.html">Resources</a></li>
-    </ul>
-    <p class="footer-copy">© 2025 Glow Guide. Educational use only.</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
