@@ -3,285 +3,330 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Morning and evening skincare routines for oily, dry, combination, and sensitive skin types. Step-by-step guides for every beginner." />
-  <meta name="keywords" content="skincare routine, morning routine, evening routine, oily skin routine, dry skin, sensitive skin, combination skin, AM PM routine" />
+  <meta name="description" content="Step-by-step morning and evening skincare routines for oily, dry, combination, and sensitive skin types. Beginner-friendly guides from Glow Guide." />
+  <meta name="keywords" content="skincare routine, morning routine, evening routine, oily skin, dry skin, sensitive skin, combination skin, AM PM skincare, beginner routine" />
   <meta name="author" content="Glow Guide" />
   <title>Skincare Routines — Glow Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Routine two-column layout */
-    .routine-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      margin-top: 10px;
-    }
-    .routine-cols h3 {
-      font-size: 22px;
-      margin-bottom: 6px;
-      color: var(--accent);
-    }
-    @media (max-width: 700px) {
-      .routine-cols { grid-template-columns: 1fr; gap: 32px; }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="header-inner">
-      <div class="site-logo">✦ Glow <span>Guide</span></div>
-      <nav>
-        <ul id="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="basics.html">Skincare Basics</a></li>
-          <li><a href="ingredients.html">Ingredients</a></li>
-          <li><a href="routines.html" class="active">Routines</a></li>
+<!-- ══════════════ HEADER ══════════════ -->
+<header id="hdr">
+  <div class="hdr">
+    <a href="index.html" class="logo"><span class="logo-gem"></span>Glow Guide</a>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html" class="active">Routines</a></li>
+        <li><a href="index.html#subscribe" class="nav-pill">Subscribe</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<main>
+
+  <!-- PAGE HERO -->
+  <div class="pg-hero">
+    <span class="chip">✦ Your Personalised Plan</span>
+    <h1>Daily <em>Routines</em></h1>
+    <p>Morning and evening routines for every skin type. Consistency with a simple routine always beats an elaborate one done occasionally.</p>
+  </div>
+
+  <!-- FIND YOUR TYPE ───────────────────────────── -->
+  <section class="sec">
+    <div class="wrap two-col">
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1643185539104-3622eb1cb8ac?w=700&auto=format&fit=crop&q=80"
+          alt="Person applying moisturiser with a gentle, upward motion in soft morning light"
+          width="700" height="400"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <span class="chip">✦ Know Your Skin</span>
+        <h2>Identify your skin type first.</h2>
+        <hr class="rule" />
+        <p>The most effective routine is one tailored to your actual skin type. To identify yours: wash your face with a gentle cleanser, apply nothing, and observe how it feels after 60 minutes.</p>
+        <ul>
+          <li><strong>Oily:</strong> Visibly shiny or greasy, especially on the T-zone</li>
+          <li><strong>Dry:</strong> Tight, rough, or flaky with minimal natural shine</li>
+          <li><strong>Combination:</strong> Oily forehead, nose &amp; chin with drier cheeks</li>
+          <li><strong>Sensitive:</strong> Reacts easily with redness, stinging, or itching</li>
+          <li><strong>Normal:</strong> Balanced, comfortable, minimal sensitivity or oiliness</li>
         </ul>
-      </nav>
-      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
+        <br />
+        <p style="font-size:13.5px;">Select your skin type in the tabs below for your complete AM &amp; PM routine.</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- MAIN -->
-  <main>
+  <!-- ════════════════════════════════════════
+       VIDEO SECTION
+       HTML5 <video> tag — REQUIRED ELEMENT
+       File: skincare.mp4 (same folder as this HTML file)
+       Duration: 15 seconds | Size: ~1.5 MB | Format: MP4 H.264
+       Created specifically for this project
+  ════════════════════════════════════════ -->
+  <section class="sec-dk" id="video">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:0;">
+        <span class="chip">✦ Watch &amp; Learn</span>
+        <h2 style="color:var(--white);">See skincare in action.</h2>
+        <p style="max-width:540px;margin:0 auto 0;color:rgba(255,255,255,.58);">
+          Watch the Glow Guide introduction video below, then use the step-by-step routine builder to craft your own personalised plan.
+        </p>
+      </div>
 
-    <!-- PAGE HERO -->
-    <div class="page-hero">
-      <span class="label">Your Personalized Plan</span>
-      <h1>Daily <em>Routines</em></h1>
-      <p>Morning and evening routines tailored for every skin type. The secret? Simplicity and consistency — not more products.</p>
-    </div>
+      <!-- Video + side panel layout -->
+      <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:48px;align-items:start;">
 
-    <!-- INTRO -->
-    <section class="section">
-      <div class="container two-col">
-        <div>
-          <span class="label">Where to Start</span>
-          <h2>Find your skin type first.</h2>
-          <p>Before choosing a routine, it helps to understand which skin type you have. The easiest way: wash your face with a gentle cleanser, wait one hour without applying anything, and observe how your skin feels.</p>
-          <ul style="margin: 16px 0 16px 20px; list-style: disc; color: var(--text-muted); font-size: 15px; line-height: 2;">
-            <li><strong style="color:var(--text);">Oily:</strong> Shiny or greasy all over, especially T-zone</li>
-            <li><strong style="color:var(--text);">Dry:</strong> Tight, rough, or flaky patches; little shine</li>
-            <li><strong style="color:var(--text);">Combination:</strong> Oily T-zone (forehead, nose, chin) with normal or dry cheeks</li>
-            <li><strong style="color:var(--text);">Sensitive:</strong> Reacts easily to products — redness, stinging, or itching</li>
-            <li><strong style="color:var(--text);">Normal:</strong> Balanced, neither too oily nor too dry, minimal sensitivity</li>
+        <!--
+          ★ HTML5 <video> TAG  (required element for this assignment) ★
+          The <video> element embeds the file skincare.mp4 directly.
+          No YouTube or external service is used.
+          A poster image is shown before the user presses play.
+        -->
+        <div class="vid-shell" style="margin:0;max-width:100%;">
+          <video
+            controls
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=860&auto=format&fit=crop&q=70"
+            aria-label="Glow Guide skincare introduction video — 15 seconds"
+          >
+            <source src="skincare.mp4" type="video/mp4" />
+            <!-- Fallback text for browsers that do not support HTML5 video -->
+            <p>Your browser does not support the HTML5 video element.
+               Please <a href="skincare.mp4" style="color:var(--terra-lt);">download the video</a> to watch it.</p>
+          </video>
+          <div class="vid-bar">
+            <div class="vid-play-icon">▶</div>
+            <div class="vid-meta">
+              <strong>Glow Guide — Introduction</strong>
+              <span>15 sec · MP4 · HTML5 &lt;video&gt; tag · skincare.mp4</span>
+            </div>
+            <span class="vid-tag">HTML5 &lt;video&gt;</span>
+          </div>
+        </div>
+
+        <!-- Side panel with tips -->
+        <div class="vid-aside">
+          <h3>Routine principles to remember</h3>
+          <p>Keep these core ideas in mind as you build your personalised routine below:</p>
+          <ul>
+            <li><strong>Consistency beats complexity.</strong> A 3-step routine done daily outperforms a 10-step routine done occasionally.</li>
+            <li><strong>Thinnest to thickest.</strong> Always apply watery products before heavier creams and oils.</li>
+            <li><strong>SPF is the final morning step.</strong> Every single day — no exceptions.</li>
+            <li><strong>Give products time.</strong> Most actives need 4–12 weeks before visible results appear.</li>
+            <li><strong>One new product at a time.</strong> Introduce slowly so you can identify what works — and what doesn't.</li>
           </ul>
-          <p>Select a skin type below to see a full AM and PM routine built specifically for you.</p>
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1643185539104-3622eb1cb8ac?w=600&auto=format&fit=crop&q=80"
-            alt="Person applying skincare routine in front of a mirror with soft morning light"
-            width="600" height="360"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- TABBED ROUTINES -->
-    <section class="section-alt">
-      <div class="container">
-        <span class="label">Step-by-Step Routines</span>
-        <h2>Choose your skin type.</h2>
-        <p style="max-width:580px; margin-bottom: 32px;">Each routine below includes recommended product types for both morning and evening. Remember: it's better to do a simple 3-step routine consistently than a 10-step routine occasionally.</p>
-
-        <div class="tab-row">
-          <button class="tab-btn active" onclick="showTab('oily', this)">Oily Skin</button>
-          <button class="tab-btn" onclick="showTab('dry', this)">Dry Skin</button>
-          <button class="tab-btn" onclick="showTab('combo', this)">Combination</button>
-          <button class="tab-btn" onclick="showTab('sensitive', this)">Sensitive Skin</button>
         </div>
 
-        <!-- OILY -->
-        <div class="tab-panel active" id="tab-oily">
-          <div class="routine-cols">
-            <div>
-              <h3>🌅 Morning Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Focus on cleansing without over-stripping, and controlling shine through the day.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Gel or Foaming Cleanser</h4><p>Removes overnight oil and sebum. Look for formulas with salicylic acid to gently unclog pores during cleansing.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Niacinamide Toner</h4><p>Balances oil production and minimizes the appearance of enlarged pores. Apply with a cotton pad or pat directly into skin.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Oil-Free Gel Moisturizer</h4><p>Oily skin still needs hydration. A lightweight, non-comedogenic gel formula hydrates without adding shine or clogging pores.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Matte Finish SPF 30+</h4><p>A mattifying sunscreen controls shine throughout the day while protecting against UV damage. Never skip this step.</p></div></div>
-              </div>
-            </div>
-            <div>
-              <h3>🌙 Evening Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Remove all makeup and sunscreen thoroughly, then treat congested pores.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Micellar Water or Balm Cleanser</h4><p>First cleanse to break down makeup, sunscreen, and surface pollution without disturbing the skin barrier.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Foaming Cleanser (Double Cleanse)</h4><p>Second cleanse ensures pores are fully clear of residue. Essential after wearing sunscreen or makeup.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>BHA Exfoliant 1–2× /week</h4><p>Salicylic acid penetrates oily pores and clears congestion. Use on alternating nights; do not combine with retinol on same night.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Light Gel Moisturizer</h4><p>Even oily skin needs nighttime hydration to recover. A gel formula won't feel heavy or greasy as you sleep.</p></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DRY -->
-        <div class="tab-panel" id="tab-dry">
-          <div class="routine-cols">
-            <div>
-              <h3>🌅 Morning Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Layer hydration and seal it in with richer formulas designed to nourish dry skin all day.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Creamy or Milky Cleanser</h4><p>Gentle, non-stripping formulas that clean without disrupting the little natural moisture dry skin has. Avoid foaming cleansers.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Hydrating Toner or Essence</h4><p>Add an extra layer of lightweight moisture before heavier products. Pat in gently — don't wipe.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Hyaluronic Acid Serum</h4><p>Apply to still-damp skin to draw moisture in. Follow immediately with moisturizer to lock it in — critical step for dry skin.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Rich Cream Moisturizer</h4><p>Look for ceramides, shea butter, or squalane. Thicker creams work best for dry skin to provide long-lasting hydration.</p></div></div>
-                <div class="step-item"><div class="step-num">5</div><div class="step-text"><h4>Hydrating SPF 50</h4><p>Choose a dewy or moisturizing sunscreen formula for an added layer of comfort. Avoid matte formulas for dry skin.</p></div></div>
-              </div>
-            </div>
-            <div>
-              <h3>🌙 Evening Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Focus on deep nourishment and overnight barrier repair.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Gentle Oil-Based Cleanser</h4><p>Oil dissolves sunscreen and makeup while actually nourishing dry skin — unlike foaming cleansers which can strip it further.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Hydrating Toner</h4><p>Layer in a glycerin or hyaluronic-acid-rich toner while skin is still slightly damp from cleansing.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Peptide or Ceramide Serum</h4><p>Repair and rebuild the skin barrier as you sleep. Peptides signal the skin to produce more collagen; ceramides restore the protective lipid layer.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Rich Night Cream or Sleeping Mask</h4><p>Seal everything in with a thick nourishing formula. Use a sleeping mask 1–2× per week for an extra intensive hydration treatment.</p></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- COMBO -->
-        <div class="tab-panel" id="tab-combo">
-          <div class="routine-cols">
-            <div>
-              <h3>🌅 Morning Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Balance is the goal — hydrate dry zones without overloading the oily T-zone.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Balancing Gel Cleanser</h4><p>Neither too stripping nor too nourishing — a balanced formula cleans all zones without aggravating either concern.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Niacinamide-Based Toner</h4><p>Niacinamide simultaneously addresses oiliness (T-zone), redness, and texture — ideal for combination skin's multiple needs.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Light Lotion Moisturizer</h4><p>A medium-weight moisturizer hydrates dry areas (cheeks) without over-loading oily zones. Avoid heavy creams or gel extremes.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Balanced SPF 30+</h4><p>Choose a formula that's neither too mattifying nor too dewy — a fluid or lotion SPF typically works well.</p></div></div>
-              </div>
-            </div>
-            <div>
-              <h3>🌙 Evening Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Customize by skin zone — richer on dry areas, lighter on oily zones.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Double Cleanse</h4><p>Micellar water followed by a gel cleanser ensures all zones are thoroughly cleansed, especially if wearing SPF or makeup.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Niacinamide Serum (All Over)</h4><p>Apply niacinamide all over for its balancing, pore-minimizing, and redness-reducing benefits. Works perfectly for combination skin.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Zone-Specific Moisturizing</h4><p>Apply a lightweight gel on the T-zone and a richer cream on the cheeks. This "skin zone" approach gives each area exactly what it needs.</p></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SENSITIVE -->
-        <div class="tab-panel" id="tab-sensitive">
-          <div class="routine-cols">
-            <div>
-              <h3>🌅 Morning Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Fewer ingredients, gentler formulas, and fragrance-free everything. Simplicity is the priority.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Fragrance-Free Cream Cleanser</h4><p>Skip foaming cleansers — surfactants can trigger reactive skin. A fragrance-free cream or micellar water is far gentler.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Calming Toner or Essence</h4><p>Look for centella asiatica, aloe vera, allantoin, or panthenol — all proven to soothe redness and calm inflammation.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Simple Ceramide Moisturizer</h4><p>Fewer ingredients = less reaction risk. Ceramide-rich, fragrance-free moisturizers are the gold standard for sensitive skin.</p></div></div>
-                <div class="step-item"><div class="step-num">4</div><div class="step-text"><h4>Mineral Sunscreen SPF 30+</h4><p>Zinc oxide-based "physical" sunscreens sit on top of skin rather than absorbing into it, making them significantly gentler for reactive skin than chemical filters.</p></div></div>
-              </div>
-            </div>
-            <div>
-              <h3>🌙 Evening Routine</h3>
-              <p style="font-size:14px; margin-bottom:14px;">Keep it minimal. Let your skin's natural overnight repair process do the heavy lifting.</p>
-              <div class="step-list">
-                <div class="step-item"><div class="step-num">1</div><div class="step-text"><h4>Micellar Water (No-rinse)</h4><p>Often sufficient on its own for sensitive skin. Gently wipes away the day without any harsh rubbing or surfactant-heavy formulas.</p></div></div>
-                <div class="step-item"><div class="step-num">2</div><div class="step-text"><h4>Skin-Calming Serum</h4><p>Centella asiatica, panthenol (Vitamin B5), and allantoin support skin healing and reduce overnight redness and irritation.</p></div></div>
-                <div class="step-item"><div class="step-num">3</div><div class="step-text"><h4>Fragrance-Free Night Moisturizer</h4><p>Keep the ingredient list short. The fewer potential irritants, the better. Patch test any new moisturizer before applying to your full face.</p></div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- VIDEO SECTION -->
-    <section class="video-section">
-      <div class="container">
-        <div class="center">
-          <span class="label">Watch &amp; Learn</span>
-          <h2>Skincare videos for beginners.</h2>
-          <p>Sometimes watching someone demonstrate a routine is more helpful than reading about it. Here are two helpful videos to supplement what you've learned above.</p>
-        </div>
-
-        <div class="video-grid">
-
-          <!-- VIDEO 1: HTML5 <video> tag (required) -->
-          <!-- 
-            NOTE FOR GRADING: The first video below uses the HTML5 <video> tag as required.
-            The source is a small, public-domain skincare demonstration video from the W3Schools sample video repository.
-            This satisfies the <video> tag requirement per assignment instructions.
-          -->
-          <div class="video-box">
-            <span class="video-tag">★ HTML5 &lt;video&gt; Tag</span>
-            <video
-              controls
-              poster="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=640&auto=format&fit=crop&q=70"
-              title="Beginner skincare demonstration video"
-            >
-              <!-- Public domain sample video (small file size, under 1 min) -->
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-              <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
-              Your browser does not support the HTML5 video element. Please update your browser to view this video.
-            </video>
-            <div class="video-label">
-              <strong>Skincare Routine Demo — HTML5 Video</strong>
-              <span>This video is embedded using the HTML5 &lt;video&gt; tag with MP4 and OGG fallback sources.</span>
-            </div>
-          </div>
-
-          <!-- VIDEO 2: YouTube iframe embed -->
-          <div class="video-box">
-            <iframe
-              src="https://www.youtube.com/embed/OrElyY7MFVs"
-              title="Dermatologist's Beginner Skincare Routine Guide — YouTube"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="video-label">
-              <strong>Dermatologist's Beginner Skincare Guide</strong>
-              <span>YouTube embed — Expert skincare routine tips from a board-certified dermatologist.</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <div class="cta-banner">
-      <div class="container">
-        <span class="label">Questions?</span>
-        <h2>We're here to help.</h2>
-        <p>Not sure which routine to follow? Have a specific skin concern? Send us a message — we'd love to help you get started.</p>
-        <a href="index.html#subscribe" class="btn-primary">Contact Us →</a>
       </div>
     </div>
+  </section>
 
-  </main>
+  <!-- TABBED ROUTINES ──────────────────────────── -->
+  <section class="sec">
+    <div class="wrap">
+      <span class="chip">✦ Step-by-Step</span>
+      <h2>Choose your skin type.</h2>
+      <p style="max-width:580px;margin-bottom:34px;">
+        Each routine below covers recommended product types for morning and evening. Start with the essentials — cleanser, moisturiser, SPF — and add steps gradually as your skin adjusts.
+      </p>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-logo">✦ Glow Guide</div>
-      <p>Beginner skincare made simple &amp; accessible for everyone.</p>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="basics.html">Skincare Basics</a>
-        <a href="ingredients.html">Ingredients</a>
-        <a href="routines.html">Routines</a>
-      </nav>
-      <p class="footer-email">Questions? Email us: <a href="mailto:hello@glowguide.com">hello@glowguide.com</a></p>
-      <p class="footer-copy">© 2025 Glow Guide — For educational purposes only.</p>
+      <div class="tab-row" role="tablist">
+        <button class="tab-btn active" onclick="showTab('oily',this)" role="tab" aria-selected="true">Oily</button>
+        <button class="tab-btn" onclick="showTab('dry',this)"       role="tab">Dry</button>
+        <button class="tab-btn" onclick="showTab('combo',this)"     role="tab">Combination</button>
+        <button class="tab-btn" onclick="showTab('sens',this)"      role="tab">Sensitive</button>
+      </div>
+
+      <!-- OILY -->
+      <div class="tab-panel active" id="tab-oily" role="tabpanel">
+        <div class="r-cols">
+          <div>
+            <h3>🌅 Morning</h3>
+            <p class="r-sub">Control shine, hydrate without grease, protect all day.</p>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-n">1</div>
+                <div class="step-txt"><h4>Gel or Foaming Cleanser</h4><p>Removes overnight sebum and bacteria. Look for salicylic acid formulas that gently decongest pores during the cleansing step itself.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">2</div>
+                <div class="step-txt"><h4>Niacinamide Toner</h4><p>Regulates oil production and visibly minimises pores. Apply with a cotton pad or pat directly into skin with clean fingertips.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">3</div>
+                <div class="step-txt"><h4>Oil-Free Gel Moisturiser</h4><p>Oily skin still needs hydration — skipping this triggers compensatory oil production. Choose non-comedogenic, lightweight formulas.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">4</div>
+                <div class="step-txt"><h4>Mattifying SPF 30+</h4><p>A matte-finish sunscreen controls midday shine while providing broad-spectrum UV protection. The essential final morning step.</p></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>🌙 Evening</h3>
+            <p class="r-sub">Deep-cleanse, treat congested pores, reset overnight.</p>
+            <div class="step-list">
+              <div class="step-item">
+                <div class="step-n">1</div>
+                <div class="step-txt"><h4>Micellar Water or Cleansing Oil</h4><p>First cleanse to dissolve sunscreen, makeup, and surface pollution without disrupting the barrier. Wipe away gently.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">2</div>
+                <div class="step-txt"><h4>Foaming Cleanser (Double Cleanse)</h4><p>Second cleanse removes residue the first couldn't reach. Critical after wearing sunscreen or any makeup.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">3</div>
+                <div class="step-txt"><h4>BHA Exfoliant 2–3× /week</h4><p>Salicylic acid penetrates pores and dissolves congestion. Use on alternating nights — never the same night as retinol.</p></div>
+              </div>
+              <div class="step-item">
+                <div class="step-n">4</div>
+                <div class="step-txt"><h4>Lightweight Gel Moisturiser</h4><p>Even oily skin needs nighttime hydration to support repair. A gel texture won't feel heavy or cause breakouts overnight.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DRY -->
+      <div class="tab-panel" id="tab-dry" role="tabpanel">
+        <div class="r-cols">
+          <div>
+            <h3>🌅 Morning</h3>
+            <p class="r-sub">Layer hydration and seal it in with rich, nourishing formulas.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Creamy or Milky Cleanser</h4><p>Cleans without stripping the little natural oil dry skin has. Avoid foaming formulas that leave skin feeling uncomfortably tight.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Hydrating Toner or Essence</h4><p>Layer lightweight moisture before heavier products. Pat in gently — never wipe — to avoid further irritation.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Hyaluronic Acid Serum</h4><p>Apply to damp skin and follow immediately with moisturiser to seal the hydration in. Skipping the moisturiser negates this step for dry skin.</p></div></div>
+              <div class="step-item"><div class="step-n">4</div><div class="step-txt"><h4>Rich Cream Moisturiser</h4><p>Look for ceramides, shea butter, or squalane. Cream formulas seal in previous layers and provide long-lasting comfort throughout the day.</p></div></div>
+              <div class="step-item"><div class="step-n">5</div><div class="step-txt"><h4>Hydrating SPF 50</h4><p>Choose a dewy or moisturising sunscreen formula — not matte, which can highlight dry patches and cause flaking.</p></div></div>
+            </div>
+          </div>
+          <div>
+            <h3>🌙 Evening</h3>
+            <p class="r-sub">Deep nourishment and overnight barrier repair.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Gentle Oil-Based Cleanser</h4><p>Melts away sunscreen and makeup while nourishing dry skin rather than stripping it. Far less drying than foaming cleansers for this type.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Hydrating Toner</h4><p>Glycerin or HA-rich toner patted in while skin is still slightly damp from cleansing maximises hydration absorption.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Ceramide or Peptide Serum</h4><p>Rebuild and repair the barrier as you sleep. Peptides stimulate collagen; ceramides replenish the protective lipid layer.</p></div></div>
+              <div class="step-item"><div class="step-n">4</div><div class="step-txt"><h4>Rich Night Cream or Sleeping Mask</h4><p>Seal everything in with a thick nourishing cream. Use an intensive sleeping mask 1–2× per week for a major hydration treatment.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMBINATION -->
+      <div class="tab-panel" id="tab-combo" role="tabpanel">
+        <div class="r-cols">
+          <div>
+            <h3>🌅 Morning</h3>
+            <p class="r-sub">Balance is the goal — hydrate without overloading oily zones.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Balancing Gel Cleanser</h4><p>Neither too stripping nor too rich — a balanced formula cleanses all zones without triggering either oiliness or tightness.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Niacinamide Toner</h4><p>Addresses oiliness, pores, redness, and uneven tone simultaneously — niacinamide's versatility makes it ideal for combination skin's multiple needs.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Medium-Weight Lotion Moisturiser</h4><p>Hydrates drier cheeks without overloading the T-zone. Avoid both heavy creams and ultra-light gels — a lightweight lotion is the sweet spot.</p></div></div>
+              <div class="step-item"><div class="step-n">4</div><div class="step-txt"><h4>Balanced SPF 30+</h4><p>A fluid or lotion sunscreen formula works best — neither aggressively mattifying nor overly dewy.</p></div></div>
+            </div>
+          </div>
+          <div>
+            <h3>🌙 Evening</h3>
+            <p class="r-sub">Customise by zone — richer on dry areas, lighter on oily.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Double Cleanse</h4><p>Micellar water followed by a gentle gel cleanser ensures thorough removal from all skin zones. Essential after wearing SPF or makeup.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Niacinamide Serum (All Over)</h4><p>Balances sebum, minimises pores, fades uneven tone, and calms redness — addressing all of combination skin's main concerns in one product.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Zone-Targeted Moisturiser</h4><p>Richer cream on cheeks, lighter gel on the T-zone. This personalised approach gives each zone exactly what it needs — nothing more, nothing less.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SENSITIVE -->
+      <div class="tab-panel" id="tab-sens" role="tabpanel">
+        <div class="r-cols">
+          <div>
+            <h3>🌅 Morning</h3>
+            <p class="r-sub">Fewer ingredients, gentler formulas, fragrance-free everything.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Fragrance-Free Cream Cleanser</h4><p>Foaming cleansers frequently trigger sensitive skin. A fragrance-free cream or gentle micellar water is far less likely to cause a reaction.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Calming Toner or Essence</h4><p>Look for centella asiatica, aloe vera, allantoin, or panthenol — all clinically proven to reduce redness and calm inflammation effectively.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Simple Ceramide Moisturiser</h4><p>Fewer ingredients means lower reaction risk. Fragrance-free, ceramide-rich formulas are the gold standard for sensitive and reactive skin.</p></div></div>
+              <div class="step-item"><div class="step-n">4</div><div class="step-txt"><h4>Mineral SPF 30+ (Zinc Oxide)</h4><p>Physical sunscreens sit on the skin surface rather than absorbing into it, making them far less irritating than chemical UV filters for sensitive types.</p></div></div>
+            </div>
+          </div>
+          <div>
+            <h3>🌙 Evening</h3>
+            <p class="r-sub">Minimal steps, maximum gentleness — let skin recover overnight.</p>
+            <div class="step-list">
+              <div class="step-item"><div class="step-n">1</div><div class="step-txt"><h4>Micellar Water (No-Rinse)</h4><p>A gentle micellar water is often all sensitive skin needs at night. No harsh rubbing, no surfactant-heavy formulas, no unnecessary friction.</p></div></div>
+              <div class="step-item"><div class="step-n">2</div><div class="step-txt"><h4>Calming Serum</h4><p>Centella asiatica or panthenol (Vitamin B5) actively support overnight skin healing and help reduce redness from the day's environmental exposure.</p></div></div>
+              <div class="step-item"><div class="step-n">3</div><div class="step-txt"><h4>Fragrance-Free Night Moisturiser</h4><p>Keep the ingredient list short and simple. Always patch test any new product on your inner arm before applying to your full face.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- CTA -->
+  <div class="cta-dk">
+    <div class="wrap">
+      <span class="chip">✦ Questions?</span>
+      <h2>We're here to help.</h2>
+      <p>Not sure which routine fits your skin? Have a specific concern? Send us a message — we'd love to help you find the right path forward.</p>
+      <a href="index.html#subscribe" class="btn btn-ghost">Contact Us →</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="ftr-grid">
+    <div class="ftr-brand">
+      <div class="logo"><span class="logo-gem"></span>Glow Guide</div>
+      <p>Beginner skincare made simple, affordable, and accessible for everyone.</p>
+    </div>
+    <div class="ftr-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basics.html">Skincare Basics</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="routines.html">Routines</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.aad.org" target="_blank" rel="noopener">AAD.org ↗</a></li>
+        <li><a href="https://www.healthline.com/health/beauty-skin-care" target="_blank" rel="noopener">Healthline ↗</a></li>
+        <li><a href="https://incidecoder.com" target="_blank" rel="noopener">INCI Decoder ↗</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col ftr-email">
+      <h4>Contact</h4>
+      <p style="font-size:13px;color:rgba(255,255,255,.38);margin-bottom:10px;">Questions? We'd love to help.</p>
+      <a href="mailto:hello@glowguide.com">hello@glowguide.com</a>
+    </div>
+  </div>
+  <div class="ftr-bottom">
+    <span>© 2025 Glow Guide — For educational purposes only.</span>
+    <span>Always consult a dermatologist for personalised advice.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
